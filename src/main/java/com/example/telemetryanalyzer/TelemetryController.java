@@ -36,7 +36,7 @@ public class TelemetryController {
 		Timestamp timeToSearch = new Timestamp(startingTimestamp.getTime() + (cicle.getCicle() * 60*1000));
 
 		//Query to get the telemetry data
-		List<Sensors> results = sensorsRepository.findByTimestampAndPressGreaterThanAndTempGreaterThanAndOmegaGreaterThanAndSpeedGreaterThanOrderByCar_idDesc(timeToSearch, 0, 0, 0, 0);
+		List<Sensors> results = sensorsRepository.findByTimestampAndPressGreaterThanAndOmegaGreaterThanOrderByCar_idDesc(timeToSearch, 0, 0);
 
 
 		/*Manual TEST

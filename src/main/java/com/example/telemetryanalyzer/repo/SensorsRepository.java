@@ -10,6 +10,6 @@ public interface SensorsRepository extends CrudRepository<Sensors, Long> {
 
     List<Sensors> findByTimestamp(Timestamp timestamp);
 
-    List<Sensors> findByTimestampAndPressGreaterThanAndTempGreaterThanAndOmegaGreaterThanAndSpeedGreaterThanOrderByCar_idDesc(
-            Timestamp startingTimestamp, double press, double temp, double omega, double speed);
+    List<Sensors> findByTimestampAndPressGreaterThanAndOmegaGreaterThanOrderByCar_idDesc(
+            Timestamp startingTimestamp, double press, double omega);
 }
