@@ -11,13 +11,14 @@ Prerequisites:
 
 -Database: MySQL DB
 
--Client database: MySQL Workbench or DBeaver
+-Client database: MySQL Workbench
 
 
 
 Guide:
 
--Create a server Database connection using a MySQL DB. The connection string must be jdbc:mysql://localhost:3306/telemetry
+-Create a server Database connection using a MySQL DB. The connection string must be jdbc:mysql://localhost:3306/telemetry.
+Via the MySQL Workbench, import the "sensors" table maintaining the field names as specified in the json or csv file
 
 -Download and unzip the source repository for this project, or clone it using Git: git clone https://github.com/Stranu/TelemetryFullStack.git
 
