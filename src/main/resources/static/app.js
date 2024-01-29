@@ -75,7 +75,7 @@ function showTelemetry(messages) {
         $("#telemetry").append("<td>" + message.temp + "</td>");
         $("#telemetry").append("<td>" + message.omega + "</td>");
         $("#telemetry").append("<td>" + message.speed + "</td>");
-        $("#telemetry").append("<td>" + message.car_id + "</td>");
+        $("#telemetry").append("<td>" + message.car + "</td>");
         $("#telemetry").append("</tr>");
     });
 }

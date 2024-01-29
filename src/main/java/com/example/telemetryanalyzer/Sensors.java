@@ -22,20 +22,20 @@ public class Sensors {
 	private Double temp;
 	private Double omega;
 	private Double speed;
-	private String car_id;
+	private String car;
 
 	public Sensors() {
 	}
 
 
-	public Sensors(Timestamp timestamp, Double press, String position, Double temp, Double omega, Double speed, String car_id) {
+	public Sensors(Timestamp timestamp, Double press, String position, Double temp, Double omega, Double speed, String car) {
 		this.timestamp = timestamp;
 		this.press = press;
 		this.position = position;
 		this.temp = temp;
 		this.omega = omega;
 		this.speed = speed;
-		this.car_id = car_id;
+		this.car = car;
 	}
 
 	public Long getId() {
@@ -94,11 +94,11 @@ public class Sensors {
 		this.speed = speed;
 	}
 
-	public String getCar_id() {
-		return car_id;
+	public String getCar() {
+		return car;
 	}
 
-	public void setCar_id(String car_id) {
-		this.car_id = car_id;
+	public void setCar(String car_id) {
+		this.car = car_id;
 	}
 }
